@@ -9,6 +9,8 @@ This configuration creates a minimal VPC + subnetwork, firewall rules for HTTP/S
 - `modules/network` defines the VPC, subnet, and firewall rule.
 - `modules/compute` defines the VM and nginx startup script.
 
+
+
 ## Prerequisites
 - Terraform >= 1.0
 - Google Cloud project with billing enabled
@@ -23,3 +25,6 @@ terraform apply         # create the web server
 ```
 
 After apply, visit the `instance_external_ip` output on port 80 to see the nginx page with your `startup_page_text`.
+
+
+
